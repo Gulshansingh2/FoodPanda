@@ -1,0 +1,441 @@
+create table pass(password varchar(50),confirmpassword varchar(50),securityanswer varchar(100));
+insert into pass values('12345','12345','hello')
+commit;
+
+drop table food;
+create table food(sno number(4) primary key,city varchar(20),area varchar(20),restaurants varchar(50),imgname varchar(20),restdesc varchar(200));
+select * from food
+select distinct restaurants,restdesc from food
+rollback;
+select * from tab;
+commit;
+update  food set imgname='70miles.jpeg' where sno='5';
+update  food set imgname='Days Hotel.jpeg' where sno='2';
+insert into  food values(1,'Delhi','Rohini','Mitra da Dhaba','mitra.jpeg','North Indian,chinese');   
+insert into  food values(2,'Delhi','Rohini','Days Hotel','days.jpeg','North Indian,chinese,Italian,Biryani');
+insert into  food values(3,'Delhi','Rohini','Chokhi Dhani','chokhi.jpg','North Indian,chinese,Thali');
+insert into  food values(4,'Delhi','Rohini','Sanjha chulha','sanjha.jpeg','North Indian,chinese');
+insert into  food values(5,'Delhi','Rohini','70 Milestone','70miles,jpeg','North Indian,chinese');
+
+insert into  food values(6,'Delhi','Uttam Nagar','Dosa Corner','dosa plaza.jpg','North Indian,chinese,Dosa');   
+insert into  food values(7,'Delhi','Uttam Nagar','Bunny burger','bunny.png','Burgers,chinese');
+insert into  food values(8,'Delhi','Uttam Nagar','Chokhi Dhani','chokhi.jpg','North Indian,chinese,Thali');
+insert into  food values(9,'Delhi','Uttam Nagar','Food garage','foodgarage.jpeg','North Indian,chinese Restaurant');
+insert into  food values(10,'Delhi','Uttam Nagar','Amrik sukhdev','amrik.jpeg','North Indian,chinese,Thali');
+
+
+
+insert into  food values(11,'Delhi','Punjabi Bagh','Eat Junction','eatjun.jpeg','North Indian,chinese Food');   
+insert into  food values(12,'Delhi','Punjabi Bagh','Bunny king','bunny.png','Burgers,chinese');
+insert into  food values(13,'Delhi','Punjabi Bagh','Food market','food market.jpeg','North Indian,chinese');
+insert into  food values(14,'Delhi','Punjabi Bagh','Food garage','foodgarage.jpeg','North Indian,chinese,Thali');
+insert into  food values(15,'Delhi','Punjabi Bagh','Amrik sukhdev','amrik.jpeg','North Indian,chinese,Thali,Snacks');
+
+insert into  food values(16,'Delhi','Gurugram','Eat Junction','eatjun.jpeg','North Indian,Snacks');   
+insert into  food values(17,'Delhi','Gurugram','Bunny king','bunny.png','Burger,chinese');
+insert into  food values(18,'Delhi','Gurugram','Food market','food market.jpeg','North Indian,chinese');
+insert into  food values(19,'Delhi','Gurugram','Food garage','foodgarage.jpeg','North Indian,chinese');
+insert into  food values(20,'Delhi','Gurugram','Amrik sukhdev','amrik.jpeg','North Indian,chinese');
+
+
+insert into  food values(21,'Delhi','Dwarka','Eat Junction','eatjun.jpeg','Thali,chinese');   
+insert into  food values(22,'Delhi','Dwarka','Bunny king','bunny.png','Snacks,chinese');
+insert into  food values(23,'Delhi','Dwarka','Food market','food market.jpeg','Indian,chinese');
+insert into  food values(24,'Delhi','Dwarka','Food garage','foodgarage.jpeg','North Indian,Beverageg');
+insert into  food values(25,'Delhi','Dwarka','Amrik sukhdev','amrik.jpeg','Indian ,shakes');
+
+
+
+
+insert into food values(26,'Chandigarh','Sector 17','Food Market','food market.jpeg','Indian,Shakes');
+insert into food values(27,'Chandigarh','Sector 17','Food Garage','foodgarage.jpeg','Burger,,chinese');
+insert into food values(28,'Chandigarh','Sector 17','Chokhi Dhani','chokhi.jpg','Thali,chinese');
+insert into food values(29,'Chandigarh','Sector 17','Annapurna','annapurna.jpg','Snacks,chinese');
+insert into food values(30,'Chandigarh','Sector 17','Amrik Sukhdev','amrik.jpeg','North Indian,chinese');
+
+insert into food values(31,'Chandigarh','Sector 6','Food Market','food market.jpeg','Desserts,chinese');
+insert into food values(32,'Chandigarh','Sector 6','Food Garage','foodgarage.jpeg','North Indian,chinese');
+insert into food values(33,'Chandigarh','Sector 6','Chokhi Dhani','ckhoki.jpg','North Indian,burgers');
+insert into food values(34,'Chandigarh','Sector 6','Annapurna','annapurna.jpg','North Indian,italian');
+insert into food values(35,'Chandigarh','Sector 6','Amrik Sukhdev','amrik.jpeg','North Indian,Thali');
+
+
+insert into food values(36,'Chandigarh','Sector 7','Food Market','food market.jpeg','Punjbabi,Thali');
+insert into food values(37,'Chandigarh','Sector 7','Food Garage','foodgarage.jpeg','Thali,Snacks');
+insert into food values(38,'Chandigarh','Sector 7','Chokhi Dhani','chokhi.jpg','Burger,Snacks');
+insert into food values(39,'Chandigarh','Sector 7','Annapurna','annapurna.jpg','North Indian,Parnonthe');
+insert into food values(40,'Chandigarh','Sector 7','Amrik Sukhdev','amrik.jpeg','North Indian,Thali');
+
+
+
+insert into food values(41,'Chandigarh','Sector 2','Food Market','food market.jpeg','Plain food');
+insert into food values(42,'Chandigarh','Sector 2','Food Garage','foodgarage.jpeg','Chinese,Snacks');
+insert into food values(43,'Chandigarh','Sector 2','Chokhi Dhani','chokhi.jpg','North Indian,Thali');
+insert into food values(44,'Chandigarh','Sector 2','Annapurna','annapurna.jpg','North Indian,Beverages');
+insert into food values(45,'Chandigarh','Sector 2','Amrik Sukhdev','amrik.jpeg','North Indian,Thaali');
+
+
+insert into food values(46,'Chandigarh','Sector 21','Food Market','food market.jpeg','North Indian,chinese');
+insert into food values(47,'Chandigarh','Sector 21','Food Garage','foodgarage.jpeg','Punjabi,Snacks');
+insert into food values(48,'Chandigarh','Sector 21','Chokhi Dhani','chokhi.jpg','North Indian,Snacks');
+insert into food values(49,'Chandigarh','Sector 21','Annapurna','annapurna.jpg','South indian,Dosa');
+insert into food values(50,'Chandigarh','Sector 21','Amrik Sukhdev','amrik.jpeg','North Indian,Pujabi');
+
+
+
+
+insert into food values(51,'Ambala','Huda','Food Market','food market.jpeg','North Indian,chinese');
+insert into food values(52,'Ambala','Huda','Amrik Sukhdev','amrik.jpeg','North Indian,chinese,Punjabi Thali');
+insert into food values(53,'Ambala','Huda','Ambala Food stop','ambala.jpeg','North Indian,chinese,Snacks');
+insert into food values(54,'Ambala','Huda','McAmbala','mcd.jpg','North Indian,chinese,Burgers,Desserts');
+insert into food values(55,'Ambala','Huda','Annapurna','annapurna.jpg','South Indian,chinese');
+
+insert into food values(56,'Ambala','Model Town','Food Market','food market.jpeg','North Indian,chinese,Snacks');
+insert into food values(57,'Ambala','Model Town','Amrik Sukhdev','amrik.jpeg','North Indian,chinese,Punjabi Thali');
+insert into food values(58,'Ambala','Model Town','Ambala Food stop','ambala.jpeg','North Indian,chinese,Fast Food,Desserts');
+insert into food values(59,'Ambala','Model Town','McAmbala','mitra','North Indian,chinese,Burgers,Softy');
+insert into food values(60,'Ambala','Model Town','Annapurna','annapurna.jpg','South Indian,chinese,Dosa');
+
+update food set imgname='mcd.jpg' where sno='59';
+commit;
+insert into food values(61,'Ambala','Sector 7','Food Market','food market.jpeg','North Indian,chinese,Thali');
+insert into food values(62,'Ambala','Sector 7','Amrik Sukhdev','amrik.jpeg','North Indian,chinese,Punjabi Thali');
+insert into food values(63,'Ambala','Sector 7','Ambala Food stop','ambala.jpeg','North Indian,chinese,Fast Food');
+insert into food values(64,'Ambala','Sector 7','McAmbala','mcd.jpg','Burgers,Snacks,chinese');
+insert into food values(65,'Ambala','Sector 7','Annapurna','annapurna.jpg','South Indian,chinese,Dosa');
+
+
+
+insert into food values(66,'Ambala','Eldeco','Food Market','food market.jpeg','North Indian,chinese,Fast Food');
+insert into food values(67,'Ambala','Eldeco','Amrik Sukhdev','amrik.jpeg','Indian,chinese,Punjabi');
+insert into food values(68,'Ambala','Eldeco','Ambala Food stop','ambala.jpeg','North Indian,chinese,Thali');
+insert into food values(69,'Ambala','Eldeco','McAmbala','mcd.jpg','Burgers,chinese,Snacks');
+insert into food values(70,'Ambala','Eldeco','Annapurna','annapurna.jpg','South Indian,chinese,Dosa');
+
+insert into food values(71,'Ambala','Sector 3','Food Market','food market.jpeg','Fast Food,chinese');
+insert into food values(72,'Ambala','Sector 3','Amrik Sukhdev','amrik.jpeg','Indian,chinese,Thali,Desserts');
+insert into food values(73,'Ambala','Sector 3','Ambala Food stop','ambala.jpeg','Fast Food,North Indian,chinese');
+insert into food values(74,'Ambala','Sector 3','McAmbala','mcd.jpg','Burger,chinese,Shakes');
+insert into food values(75,'Ambala','Sector 3','Annapurna','anapurna.jpg','South Indian,chinese,Dosa');
+
+update food set imgname='annapurna.jpg' where sno='75';
+update food set imgname='chokhi.jpg' where sno='33';
+commit
+
+insert into food values('76','Panipat','Huda','Days Hotel','Days Hotel.jpeg','North Indian,chinese,Punjabi,Thali');
+insert into food values('77','Panipat','Huda','Luxmi Rasoi','luxmi.jpeg','North Indian,chinese,Punjabi,Thali');
+insert into food values('78','Panipat','Huda','Ahuja','ahuja.jpg','Punjabi,Indian,chinese');
+insert into food values('79','Panipat','Huda','Devendra Dhaba','dev.jpeg','Fast Food,Punjabi,,chinese');
+insert into food values('80','Panipat','Huda','Bummy Burger','bunny.png','Burgers,chinese,Snacks');
+
+insert into food values('81','Panipat','Tehsil Camp','Anna Dosa','anna.jpg','South Indian,Dosa Plaza');
+insert into food values('82','Panipat','Tehsil Camp','Qwality','quality.jpg','North Indian,chinese,Desserts');
+insert into food values('83','Panipat','Tehsil Camp','Ahuja','ahuja.jpg','Indian,chinese,Snacks');
+insert into food values('84','Panipat','Tehsil Camp','Paradise','pic1.jpg','North Indian,chinese,Dosa');
+insert into food values('85','Panipat','Tehsil Camp','Bunny Burger','buuny.png','Burgers,chinese,Snacks');
+
+insert into food values('86','Panipat','Model Town','Days Hotel','Days Hotel.jpeg','Indian,chinese,Thali');
+insert into food values('87','Panipat','Model Town','Luxmi Rasoi','luxmi.jpeg','North Indian,chinese,Punjabi,Thali');
+insert into food values('88','Panipat','Model Town','Ahuja','ahuja.jpg','Indian,chinese,Snacks');
+insert into food values('89','Panipat','Model Town','Devendra Dhaba','dev.jpeg','North Indian,chinese,Desserts,Punjabi Thali');
+insert into food values('90','Panipat','Model Town','Bummy Burger','bunny.png','Bunny Burgers,chinese,Snacks');
+
+insert into food values('91','Panipat','Ansal','Qwality','quality.jpg','North Indian,chinese');
+insert into food values('92','Panipat','Ansal','Luxmi Rasoi','luxmi.jpeg','Snacks,Indian,chinese');
+insert into food values('93','Panipat','Ansal','Ahuja','ahuja.jpg','Desserts,Indian,chinese');
+insert into food values('94','Panipat','Ansal','Devendra Dhaba','dev.jpeg','Indian,chinese,Fast Food');
+insert into food values('95','Panipat','Ansal','Bummy Burger','bunny.png','Burgers,chinese,Snacks');
+
+insert into food values('96','Panipat','Yamuna Enclave','Days Hotel','Days Hotel.jpeg','Indian,chinese,Thali');
+insert into food values('97','Panipat','Yamuna Enclave','Luxmi Rasoi','luxmi.jpeg','Indian,chinese,Snacks');
+insert into food values('98','Panipat','Yamuna Enclave','Ahuja','ahuja.jpg','Desserts,Indian,chinese');
+insert into food values('99','Panipat','Yamuna Enclave','Devendra Dhaba','dev.jpeg','Snacks,North Indian,chinese');
+insert into food values('100','Panipat','Yamuna Enclave','Bummy Burger','bunny.png','Burger,chinese');
+
+insert into food values('101','Karnal','Sec-4','Neelkanth Dhaba','neelkanth.jpg','North Indian,chinese,Punjabi Dhaba');
+insert into food values('102','Karnal','Sec-4','Dana Pani','dana pani.jpg','Indian,chinese,Italian,KFC');
+insert into food values('103','Karnal','Sec-4','The Urban Village','pic2.jpeg','North Indian,chinese,Thali');
+insert into food values('104','Karnal','Sec-4','Hotel Vivaan','vivaan.jpg','North Indian,chinese,Thali');
+insert into food values('105','Karnal','Sec-4','Bummy Burger','bunny.png','Burgers,chinese,Snacks');
+
+insert into food values('106','Karnal','Huda','Anna Dosa','anna.jpg','South Indian,chinese,Dosa');
+insert into food values('107','Karnal','Huda','Qwality','quality.jpg','North Indian,chinese,Shakes');
+insert into food values('108','Karnal','Huda','Hotel Vivaan','vivaan.jpg','North Indian,chinese');
+insert into food values('109','Karnal','Huda','Dana Pani','dana pani.jpg','Indian,chinese,Italian,KFC');
+insert into food values('110','Karnal','Huda','Bunny Burger','bunny.png','Burgers,chinese,Snacks');
+update food set imgname ='pic1.jpg' where sno='104';
+commit;
+insert into food values('111','Karnal','Model Town','Days Hotel','Days Hotel.jpeg','North Indian,chinese,Thali');
+insert into food values('112','Karnal','Model Town','Hotel Vivaan','vivaan.jpg','North Indian,chinese');
+insert into food values('113','Karnal','Model Town','Ahuja','ahuja.jpg','Snacks,Indian,chinese');
+insert into food values('114','Karnal','Model Town','Karan Lake','karan.jpg','North Indian,chinese Restaurant');
+insert into food values('115','Karnal','Model Town','Bummy Burger','bunny.png','Burger,chinese,Shakes');
+
+insert into food values('116','Karnal','Eldeco','Qwality','quality.jpg','North Indian,chinese');
+insert into food values('117','Karnal','Eldeco','Hotel Vivaan','vivaan.jpg','North Indian,chinese,Thali');
+insert into food values('118','Karnal','Eldeco','Ahuja','ahuja.jpg','Snacks,Indian,chinese');
+insert into food values('119','Karnal','Eldeco','Neelkanth Dhaba','neelkanth.jpg','North Indian,chinese,Punjabi Dhaba');
+insert into food values('120','Karnal','Eldeco','Bummy Burger','bunny.png','Burgers,chinese,Shakes');
+
+insert into food values('121','Karnal','Sec-6','Days Hotel','Days Hotel.jpeg','North Indian,chinese,Snacks');
+insert into food values('122','Karnal','Sec-6','Neelkanth Dhaba','neelkanth.jpg','Indian,chinese');
+insert into food values('123','Karnal','Sec-6','Ahuja Dhaba','ahuja.jpg','Snacks,North Indian,chinese');
+insert into food values('124','Karnal','Sec-6','Karan Lake','karan.jpg','North Indian,chinese');
+insert into food values('125','Karnal','Sec-6','Bummy Burger','buuny.png','Burger,chinese,Shakes');
+
+select * from food 
+select distinct restaurants from food
+
+commit;
+select distinct restaurants from food
+drop table area
+
+
+
+
+
+create table fooditem 
+(
+fno number primary key,
+restaurant  varchar2(30),
+popular1 varchar2(20),
+popular2  varchar2(20),
+snack1 varchar2(20),
+snack2 varchar2(20),
+drink1 varchar2(20),
+drink2 varchar2(20),
+sweet1 varchar2(20),
+sweet2 varchar2(20)
+
+);
+
+
+
+create table pricee
+(
+pno number  primary key,
+p1price number,
+p2price number,
+s1proce number,
+s2price number,
+d1price number,
+d2price number,
+sw1price number,
+sw2price number,
+fno number,
+foreign key(fno) references fooditem(fno)
+);
+
+
+select * from fooditem f,pricee p where f.fno =p.pno;
+select * from fooditem f,pricee p,foodname fn where restaurant='Days Hotel' and f.fno=p.fno and f.fno=fn.kno;
+
+insert into fooditem values (1,'Days Hotel' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(1,200,150,170,130,70,80,70,90,1);
+
+
+insert into fooditem values (2,'Luxmi Rasoi' ,'punjabi2.jpg','pizza1.jpeg','fast3.jpg','fast4.jpeg','drink1.jpeg','drink5.jpeg','sweet4.jpeg','sweet2.jpeg');
+insert into pricee values(2,180,200,210,190,100,80,60,110,2);
+
+
+insert into fooditem values (3,'Bunny burger' ,'burger1.jpeg','burger5.jpg','pizza1.jpeg','pizza2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(3,255,150,201,130,70,80,70,90,3);
+
+
+insert into fooditem values (4,'Anna Dosa' ,'south1.jpeg','south5.jpeg','fast3.jpg','fast4.jpeg','drink1.jpeg','drink.jpeg','sweet7.jpeg','sweet3.jpeg');
+insert into pricee values(4,200,250,150,170,100,80,60,90,4);
+
+
+insert into fooditem values (5,'Karan Lake' ,' chinese4.jpg','chinese5.jpg','fast1.jpg','fast2.jpeg','drink2.jpeg','drink4.jpeg','sweet7.jpeg','sweet5.jpeg');
+insert into pricee values(5,170,150,190,180,100,60,80,60,5);
+
+insert into fooditem values (6,'Chokhi Dhani' ,'thali1.jpeg','thali4.jpg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink5.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(6,200,150,170,130,70,80,70,90,6);
+
+
+insert into fooditem values (7,'Food Market' ,'chinese.jpeg','burger2.jpeg','fast4.jpg','pizza1.jpeg','drink5.jpeg','drink4.jpeg','sweet4.jpeg','sweet6.jpeg');
+insert into pricee values(7,180,200,210,190,100,80,60,110,7);
+
+
+insert into fooditem values (8,'Ambala Food stop' ,'thali0.jpg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(8,255,150,201,130,70,80,70,90,8);
+
+insert into fooditem values (9,'Qwality' ,'south5.jpeg','punjabi2.jpg','south1.jpeg','fast4.jpeg','drink5.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(9,200,150,170,130,70,80,70,90,9);
+
+
+
+insert into fooditem values (10,'Food garage' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(10,200,150,170,130,70,80,70,90,10)
+;
+insert into fooditem values (11,'Eat Junction' ,'sweet4.jpeg','pizza2.jpeg','fast4.jpeg','fast2.jpeg','drink5.jpeg','drink4.jpeg','sweet5.jpeg','sweet7.jpeg');
+insert into pricee values(11,255,150,201,130,70,80,70,90,11);
+
+
+insert into fooditem values (12,'Amrik Sukhdev' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(12,200,150,170,130,70,80,70,90,12);
+
+
+insert into fooditem values (13,'McAmbala' ,'burger1.jpeg','burger5.jpg','pizza1.jpeg','pizza2.jpeg','drink2.jpeg','drink.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(13,255,150,201,130,70,80,70,90,13);
+
+
+insert into fooditem values (14,'Ahuja' ,'thali0.jpg','thali4.jpg','punjabi2.jpg','south4.jpeg','drink6.jpeg','drink4.jpeg','sweet3.jpeg','sweet4.jpeg');
+insert into pricee values(14,200,150,170,130,70,80,70,90,14);
+
+
+insert into fooditem values (15,'Devendra Dhaba' ,'thali0.jpg','thali1.jpeg','fast1.jpg','fast2.jpeg','drink2.jpeg','drink3.jpeg','sweet7.jpeg','sweet6.jpeg');
+insert into pricee values(15,180,200,210,190,100,80,60,110,15);
+
+
+insert into fooditem values (16,'Neelkanth Dhaba' ,'chinese5.jpg','chinese8.jpg','fast3.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(16,200,150,170,130,70,80,70,90,16);
+
+
+insert into fooditem values (17,'Dana Pani' ,'burgerr.jpg','chinese.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink1.jpeg','sweet2.jpeg','sweet7.jpeg');
+insert into pricee values(17,180,200,210,190,100,80,60,110,17);
+
+
+insert into fooditem values (18,'Mitra da Dhaba' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpeg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(18,200,150,170,130,70,80,70,90,18);
+
+insert into fooditem values (19,'Sanjha chulha' ,'thali4.jpg','thali2.jpeg','fast3.jpg','fast2.jpeg','drink.jpeg','drink3.jpeg','sweet2.jpeg','sweet7.jpeg');
+insert into pricee values(19,200,150,170,130,70,80,70,90,19);
+
+
+insert into fooditem values (20,'70 Milestone' ,'thali0.jpg','thali4.jpeg','pizza2.jpeg','south3.jpeg','drink.jpeg','drink1.jpeg','sweet2.jpeg','sweet5.jpeg');
+insert into pricee values(20,180,200,210,190,100,80,60,110,20);
+
+
+insert into fooditem values (21,'Annapurna' ,'south4.jpeg','south5.jpeg','punjabi1.jpeg','pizza1.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(21,255,150,201,130,70,80,70,90,21);
+
+
+insert into fooditem values (22,'Dosa Corner' ,'south5.jpeg','fast3.jpg','chinese2.jpeg','chinese8.jpg','drink3.jpeg','drink6.jpeg','sweet4.jpeg','sweet3.jpeg');
+insert into pricee values(22,200,150,170,130,70,80,70,90,22);
+
+
+insert into fooditem values (23,'Bunny King' ,'burger5.jpg','burger1.jpeg','fast1.jpeg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(23,180,200,210,190,100,80,60,110,23);
+
+
+
+insert into fooditem values (24,'Bummy Burger' ,'burger2.jpeg','burger1.jpeg','fast1.jpeg','fast2.jpeg','drink1.jpeg','drink6.jpeg','sweet3.jpeg','sweet7.jpeg');
+insert into pricee values(24,180,200,210,190,100,80,60,110,24);
+
+insert into fooditem values (25,'Ahuja Dhaba' ,'thali1.jpeg','thali4.jpeg','chinese.jpeg','chinese7.jpg','drink6.jpeg','drink3.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(25,255,150,201,130,70,80,70,90,25);
+
+insert into fooditem values (26,'Amrik sukhdev' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','chinese8.jpeg','drink7.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(26,200,150,170,130,70,80,70,90,26);
+
+insert into fooditem values (27,'Food Market' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','chinese8.jpeg','drink7.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(27,200,150,170,130,70,80,70,90,27);
+
+insert into fooditem values (28,'Paradise' ,'punjabi1.jpeg','thali4.jpeg','fast1.jpg','chinese2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(28,180,200,210,190,100,80,60,110,28);
+
+
+insert into fooditem values (29,'The Urban Village' ,'punjabi1.jpeg','pizza2.jpeg','chinese2.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(29,200,150,170,130,70,80,70,90,29);
+
+insert into fooditem values (30,'Hotel Vivaan' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(30,200,150,170,130,70,80,70,90,30);
+
+
+insert into fooditem values (31,'Food Garage' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(31,180,200,210,190,100,80,60,110,31);
+
+
+insert into fooditem values (32,'Bunny Burger' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(32,200,150,170,130,70,80,70,90,32);
+
+
+
+
+commit;
+
+create table foodname
+(
+tno number primary key,
+p1name varchar2(20),
+p2name varchar2(20),
+f1name varchar2(20),
+f2name varchar2(20),
+d1name varchar2(20),
+d2name varchar2(20),
+sw1name varchar2(20),
+sw2name varchar2(20),
+kno number ,
+foreign key(kno) references fooditem(fno)
+);
+
+select * from fooditem
+
+insert into foodname values (1,'Punjabi Thali','OCT pizza','French Fries','Chilli Potato','Lemon Soda','Shakes','Ras Malai','ice cream',1);
+insert into foodname values (2,'Puri Chole','Capsicum pizza','Rolls','Samosa','Lemon Soda','Shakes','Laddo','Ras Malai',2);
+insert into foodname values (3,'Veg Burger','Cream Burger','Onion Pizza','Capsicum Pizza','Lemon Soda','Shakes','Ras malai','Ice cream',3);
+insert into foodname values (4,'Sambar Wada','Masala Dosa','Rolls','Samosa','Lemon Soda','Cock','GulabJamun','Spunch Rasgulla',4);
+insert into foodname values (5,'Noodles','Manchurian','French Fries','Cutlets','Lemon Soda','Shakes','Ras Malai','Ice cream',5);
+
+insert into foodname values (6,'Punjabi Thali','Mix Veg Thali','Pakora','Cutlets','Lemon Soda','Cold Coffee','Ras Malai','ice cream',6);
+insert into foodname values (7,'Fried Rice','Cream Burger','Samosa','Capsicum Pizza','Cold Coffee','Shakes','Ras Malai','Ice cream',7);
+insert into foodname values (8,'Gujrati Thali','Onion pizza','Pakora','Cutlets','Lemon Soda','Shakes','Ras Malai','Ice cream',8);
+insert into foodname values (9,'Masala Dosa','Puri Chole','Sambar Wada','Samosa','Cold Coffee','Shakes','Laddo','Ras Malai',9);
+insert into foodname values (10,'Punjabi Thali','Capsicum pizza','Pakora','Cutlets','Lemon Soda','Shakes','Ras Malai','ice cream',10);
+
+insert into foodname values (11,'Laddo','OCT pizza','Samosa','Cutlets','Cold Coffee','Shakes','Kaju katli','Gulab jamun',11);
+insert into foodname values (12,'Punjabi Thali','Capsicum pizza','Pakora','Cutlets','Lemonade','Shakes','Ras Malai','Ice cream',12);
+insert into foodname values (13,'Large Burger','Veg Burger','OCT pizza','Capsicum Pizza','Chocolate Shake','Cock','Ras Malai','Ice cream',13);
+insert into foodname values (14,'Gujrati Thali','Mix veg Thali','Veg Thali','Momos','Lemon Soda','Shakes','Spunch','Laddo',14);
+insert into foodname values (15,'Punjabi Thali','Veg Thali','Pakora','Cutlets','Chocolate Shakes','Cold Coffee','Gulab Jamun','Ice cream',15);
+
+insert into foodname values (16,'Manchurian','Rolls','Pakora','Cutlets','Lemonade','Shakes','Ras Malai','ice cream',16);
+insert into foodname values (17,'Cream burger','Fried Rice','Pakora','French Fries','Lemon Soda','Lemonade','Ras Malai','Ice Cream',17);
+insert into foodname values (18,'Punjabi Thali','Onion Pizza','French fries','Cutlest','Lemon Soda','Shakes','Ras Malai','Ice Cream',18);
+insert into foodname values (19,'Veg Thali','Gujrati Thali','Rolls','Cutlets','Coke','Lemon Soda','Ras Malai','Gulab Jamun',19);
+insert into foodname values (20,'Punjabi Thali','Mix Veg Thali','Onion Pizza','Sambhar','Coke','Lemonade','Ras Malai','Kaju Katli',20);
+
+insert into foodname values (21,'Momos','Dosa','Punjabi Thali','Capcicum Pizaa','Lemon soda','Shakes','Rasmalai','ice cream',21);
+insert into foodname values (22,'Dosa','Rolls','Pasta','Rolls',' Lemon Soda','Shakes','Laddo','Spunch',22);
+insert into foodname values (23,'Cheese Burger','Cream Burger','French Fries','Cutlets','Lemonade','Shakes','Ras Malai','Ice Cream',23);
+insert into foodname values (24,'Large Burger','Cheese Burger','French Fries','Cutlet','Lemonade','Sosa','Spunch','Gulab Jamun',24);
+insert into foodname values (25,'Gujrati Thali','Punjabi Thali','Fried Rice','Spring Roll','Lemon Soda','Shakes','Ras Malai','Ice Cream',25);
+
+insert into foodname values (26,'Punjabi Thali','OCT pizza','Pakoras','Rolls','Lemon Soda','Shakes','Ras Malai','ice cream',26);
+insert into foodname values (27,'Punjabi Thali','OCT pizza','Pakoras','Rolls','Lemon Soda','Shakes','Ras Malai','Ice cream',27);
+insert into foodname values (28,' Thali','Thali','Pasta','Samosa','Lemon Soda','Shakes','Laddo','Ras Malai',28);
+insert into foodname values (29,'Gujrati Thali','Pizza','Pasta','Cutlets','Lemon Soda','Shakes','Ras Malai','Ice Cream',29);
+insert into foodname values (30,'Punjabi Thali','OCT Pizza','Pakora','Cutlets','Lemon Soda','Shakes','Ras Malai','Ice Cream',30);
+insert into foodname values (31,'Punjabi Thali','OCT Pizza','Pakora','Cutlets','Lemon Soda','Shakes','Ras Malai','Ice Cream',31);
+insert into foodname values (32,'Punjabi Thali','OCT Pizza','Pakora','Cutlets','Lemon Soda','Shakes','Ras Malai','Ice Cream',32);
+
+
+
+commit;
+
+select * from foodname fi,fooditem f where f.fno=fi.kno;
+select * from fooditem f,pricee p where f.fno=p.fno;
+
+
+
+
+insert into fooditem values (31,'Days Hotel' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(31,200,150,170,130,70,80,70,90,31);
+
+
+insert into fooditem values (32,'Days Hotel' ,'punjabi1.jpeg','pizza2.jpeg','fast1.jpg','fast2.jpeg','drink6.jpeg','drink4.jpeg','sweet2.jpeg','sweet6.jpeg');
+insert into pricee values(32,200,150,170,130,70,80,70,90,32);
+
+
+
+create table lgfood(fnm varchar(20),pwd varchar(20),email varchar(20),mob varchar(10));
+commit;
+drop table lgfood
+select * from lgfood
+drop table 
+commit
+create table activity (hname varchar(20),himage varchar(20),hdesc varchar(20),datee varchar(20));
+alter table activity modify datee varchar(40)
+select * from activity
+delete from activity where datee='Sat Jul 22 ';
